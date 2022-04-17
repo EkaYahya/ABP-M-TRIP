@@ -1,0 +1,273 @@
+@charset "utf-8";
+RESET *,
+:before,
+:after {
+    box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dt,
+dd,
+th,
+td,
+li,
+a {
+    line-height: 1;
+    font-weight: normal;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+dt,
+dd,
+table,
+tr,
+thead,
+tbody,
+th,
+td,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+}
+p {
+    line-height: 1.5;
+}
+ul {
+    list-style: none;
+}
+a,
+a:hover,
+a:focus,
+a:visited {
+    display: inline-block;
+    text-decoration: none;
+}
+a {
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+span,
+label {
+    display: inline-block;
+}
+input,
+textarea,
+select,
+button {
+    font-size: 1em;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 0.5em 1em;
+    vertical-align: top;
+}
+select {
+    padding: calc(0.5em - 1px) 1em;
+}
+input[type="submit"],
+button {
+    cursor: pointer;
+}
+input[type="file"] {
+    max-width: 13.2em;
+    border: none;
+    padding: 0;
+}
+img {
+    display: inline-block;
+    max-width: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+/* COLOR */
+.bg-fff {
+    background-color: #fff;
+}
+.bg-000 {
+    background-color: #000;
+}
+.text-fff {
+    color: #fff;
+}
+.text-center {
+    text-align: center !important;
+}
+.text-left {
+    text-align: left !important;
+}
+.text-right {
+    text-align: right !important;
+}
+.text-bold {
+    font-weight: bold;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+strike {
+    text-decoration: line-through;
+    color: #ccc;
+}
+/* GRID */
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+}
+.row:after {
+    clear: both;
+}
+[class~="column"] {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+}
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+    .wrap {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}
+
+/* PAGE ADMIN CSS  */
+/*FONTS*/
+@font-face {
+    font-family: "SFU Futura";
+    src: url("../fonts/SFUFutura/SFUFuturaRegular/hinted-SFUFutura.eot");
+    src: url("../fonts/SFUFutura/SFUFuturaRegular/hinted-SFUFutura.eot?#iefix")
+            format("embedded-opentype"),
+        url("../fonts/SFUFutura/SFUFuturaRegular/hinted-SFUFutura.woff2")
+            format("woff2"),
+        url("../fonts/SFUFutura/SFUFuturaRegular/hinted-SFUFutura.woff")
+            format("woff"),
+        url("../fonts/SFUFutura/SFUFuturaRegular/hinted-SFUFutura.ttf")
+            format("truetype"),
+        url("../fonts/SFUFutura/SFUFuturaRegular/hinted-SFUFutura.svg#SFUFutura")
+            format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "SFU Futura";
+    src: url("../fonts/SFUFutura/SFUFuturaBold/hinted-SFUFuturaBold.eot");
+    src: url("../fonts/SFUFutura/SFUFuturaBold/hinted-SFUFuturaBold.eot?#iefix")
+            format("embedded-opentype"),
+        url("../fonts/SFUFutura/SFUFuturaBold/hinted-SFUFuturaBold.woff2")
+            format("woff2"),
+        url("../fonts/SFUFutura/SFUFuturaBold/hinted-SFUFuturaBold.woff")
+            format("woff"),
+        url("../fonts/SFUFutura/SFUFuturaBold/hinted-SFUFuturaBold.ttf")
+            format("truetype"),
+        url("../fonts/SFUFutura/SFUFuturaBold/hinted-SFUFuturaBold.svg#SFUFuturaBold")
+            format("svg");
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: "SFU Futura", Arial, sans-serif;
+    font-size: 14px;
+    color: #2a3f54;
+    background: #f7f7f7;
+}
+
+.bg-1 {
+    background: #557daa;
+}
+
+.text-1 {
+    color: #557daa;
+}
+
+/*CONTENTS CSS */
+.container {
+    display: flex;
+    display: -webkit-flex;
+    padding-left: 200px;
+    transition: 0.5s;
+}
+.container.is-click {
+    padding-left: 0;
+}
+.avatar {
+    margin: 50px 1em;
+    position: relative;
+    display: table;
+}
+.avatar img {
+    display: table-cell;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #fff;
+    overflow: hidden;
+}
+.avatarName {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 1em;
+    color: #fff;
+    line-height: 1.5;
+}
+
+/* SIDE CSS */
+.sideArea {
+    width: 200px;
+    min-width: 200px;
+    background: #2a3f54;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.container.is-click .sideArea {
+    left: -200px;
+}
+.sideArea li > a {
+    display: block;
+    color: #fff;
+    padding: 1em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.sideArea li > a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+.sideArea li > a > .fa {
+    width: 1em;
+    text-align: center;
+    margin-right: 10px;
+}
+.submenu {
+    display: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.submenu li > a {
+    padding-left: 2em;
+    border-bottom: none;
+}
+.sideMenu {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
